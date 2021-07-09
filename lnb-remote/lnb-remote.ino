@@ -59,16 +59,16 @@ void loop() {
   client.println("Content-Type: text/html");
   client.println("");
   // do not forget this one
-  client.println("<!DOCTYPE HTML>");
-  client.println("<html>");
+  // client.println("<!DOCTYPE HTML>");
+  // client.println("<html>");
   client.print("HELLO WORLD!");
-  client.println("</html>");
+  // client.println("</html>");
   if (!led_on) {
     digitalWrite(LED, HIGH);
-    Serial.println("on");  
+    Serial.println("on");
   } else {
-    digitalWrite(LED, LOW); 
-    Serial.println("off");  
+    digitalWrite(LED, LOW);
+    Serial.println("off");
   }
   led_on = !led_on;
 
